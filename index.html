@@ -7,8 +7,18 @@
             L_DISABLE_3D = false;
         </script>
     
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <style>
+                #maptitle-1234 {
+                    text-align: center;
+                    color: rgb(30, 30, 30);
+                }
+html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>
+                #maptitle-1234 {
+                    text-align: center;
+                    color: rgb(30, 30, 30);
+                }
+#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -23,25 +33,31 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_d59b7a32ac31aca379cfc4e7aaea853c {
+                #maptitle-1234 {
+                    text-align: center;
+                    color: rgb(30, 30, 30);
+                }
+
+                #map_8c0ce91ba2bcf8600ea3ab2e71610194 {
                     position: relative;
                     width: 100.0%;
-                    height: 100.0%;
+                    height: 90.0%;
                     left: 0.0%;
                     top: 0.0%;
                 }
             </style>
-        
+                    <title>Mapa</title>
 </head>
 <body>    
+            <h3 id="maptitle-1234"><b>Mapa</b></h3>
     
-            <div class="folium-map" id="map_d59b7a32ac31aca379cfc4e7aaea853c" ></div>
+            <div class="folium-map" id="map_8c0ce91ba2bcf8600ea3ab2e71610194" ></div>
         
 </body>
 <script>    
     
-            var map_d59b7a32ac31aca379cfc4e7aaea853c = L.map(
-                "map_d59b7a32ac31aca379cfc4e7aaea853c",
+            var map_8c0ce91ba2bcf8600ea3ab2e71610194 = L.map(
+                "map_8c0ce91ba2bcf8600ea3ab2e71610194",
                 {
                     center: [-25.3604877, -49.5105719],
                     crs: L.CRS.EPSG3857,
@@ -50,51 +66,51 @@
                     preferCanvas: false,
                 }
             );
-            L.control.scale().addTo(map_d59b7a32ac31aca379cfc4e7aaea853c);
+            L.control.scale().addTo(map_8c0ce91ba2bcf8600ea3ab2e71610194);
 
             
 
         
     
-            var tile_layer_6795b32cf3681561b9fd387cfa69615f = L.tileLayer(
+            var tile_layer_5b929cc5a710cd6abc27cbf66936c154 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_d59b7a32ac31aca379cfc4e7aaea853c);
+            ).addTo(map_8c0ce91ba2bcf8600ea3ab2e71610194);
         
     
-            var circle_73517c19e2760b952ccd488d7b4fe2d2 = L.circle(
+            var circle_d97677aeeb5091b21fd5ba87e7d34d18 = L.circle(
                 [-25.3604877, -49.5105719],
                 {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 700, "stroke": true, "weight": 2}
-            ).addTo(map_d59b7a32ac31aca379cfc4e7aaea853c);
+            ).addTo(map_8c0ce91ba2bcf8600ea3ab2e71610194);
         
     
-        var popup_7e614082e7d613acba48d6d27b14e548 = L.popup({"maxWidth": "100%"});
+        var popup_da0c7f4fe65f19dcf0e077ee60f7ee62 = L.popup({"maxWidth": "100%"});
 
         
-            var html_3131fc4e6d6ea56e386ccd3fd4cfca4f = $(`<div id="html_3131fc4e6d6ea56e386ccd3fd4cfca4f" style="width: 100.0%; height: 100.0%;">Raio de 700m</div>`)[0];
-            popup_7e614082e7d613acba48d6d27b14e548.setContent(html_3131fc4e6d6ea56e386ccd3fd4cfca4f);
+            var html_40a28edd6b17199888932c8c3fd42488 = $(`<div id="html_40a28edd6b17199888932c8c3fd42488" style="width: 100.0%; height: 100.0%;">Raio de 700m</div>`)[0];
+            popup_da0c7f4fe65f19dcf0e077ee60f7ee62.setContent(html_40a28edd6b17199888932c8c3fd42488);
         
 
-        circle_73517c19e2760b952ccd488d7b4fe2d2.bindPopup(popup_7e614082e7d613acba48d6d27b14e548)
+        circle_d97677aeeb5091b21fd5ba87e7d34d18.bindPopup(popup_da0c7f4fe65f19dcf0e077ee60f7ee62)
         ;
 
         
     
     
-            var marker_aabb0376c00a07d323559cc0020c2cb5 = L.marker(
+            var marker_e5ab945ea850dd49d47d492f4f815823 = L.marker(
                 [-25.3604877, -49.5105719],
                 {}
-            ).addTo(map_d59b7a32ac31aca379cfc4e7aaea853c);
+            ).addTo(map_8c0ce91ba2bcf8600ea3ab2e71610194);
         
     
-        var popup_b8782f6d0bbc1a234f44f4d700ae14ae = L.popup({"maxWidth": "100%"});
+        var popup_ce95d019c41799725a82741c2bcd976d = L.popup({"maxWidth": "100%"});
 
         
-            var html_37ba83958879a11f86ffcbc5935f657b = $(`<div id="html_37ba83958879a11f86ffcbc5935f657b" style="width: 100.0%; height: 100.0%;">Ponto</div>`)[0];
-            popup_b8782f6d0bbc1a234f44f4d700ae14ae.setContent(html_37ba83958879a11f86ffcbc5935f657b);
+            var html_0e578c1cadc0705faeadd03a9d0585a7 = $(`<div id="html_0e578c1cadc0705faeadd03a9d0585a7" style="width: 100.0%; height: 100.0%;">Ponto</div>`)[0];
+            popup_ce95d019c41799725a82741c2bcd976d.setContent(html_0e578c1cadc0705faeadd03a9d0585a7);
         
 
-        marker_aabb0376c00a07d323559cc0020c2cb5.bindPopup(popup_b8782f6d0bbc1a234f44f4d700ae14ae)
+        marker_e5ab945ea850dd49d47d492f4f815823.bindPopup(popup_ce95d019c41799725a82741c2bcd976d)
         ;
 
         
